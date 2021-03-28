@@ -1,11 +1,13 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.scss'
+import styles from '../../styles/modules/Home.module.scss'
+import { Seo } from '../components/Seo';
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Seo siteTitle="Create Next App"/>
+
       <Head>
-        <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
